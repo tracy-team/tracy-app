@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        app:labelVisibilityMode="unlabeled"/>
+
+    <item
+        android:id="@+id/chatFragment"
+        android:title="Chat"
+        android:icon="@drawable/ic_baseline_mail_24"
+        app:labelVisibilityMode="unlabeled"/>
+
+    <item
+        android:id="@+id/mapsFragment"
+        android:title="Map"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        app:labelVisibilityMode="unlabeled"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        app:labelVisibilityMode="unlabeled"/>
+</menu>

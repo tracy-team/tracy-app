@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.RegisActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline3"
+                app:srcCompat="@drawable/tracy" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="GET STARTED"
+                android:textFontWeight="800"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="32dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/edtUsernameRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/input_border"
+                        android:ems="10"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minHeight="42dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:scrollHorizontally="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edtNameRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/input_border"
+                        android:ems="10"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minHeight="42dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:scrollHorizontally="true"
+                        app:layout_constraintEnd_toEndOf="@+id/edtUsernameRegis"
+                        app:layout_constraintStart_toStartOf="@+id/edtUsernameRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/edtUsernameRegis" />
+
+                    <EditText
+                        android:id="@+id/edtEmailRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/input_border"
+                        android:hint="Email"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:minHeight="42dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:scrollHorizontally="true"
+                        app:layout_constraintEnd_toEndOf="@+id/edtNameRegis"
+                        app:layout_constraintStart_toStartOf="@+id/edtNameRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/edtNameRegis" />
+
+                    <EditText
+                        android:id="@+id/edtPassRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/input_border"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="42dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:scrollHorizontally="true"
+                        app:layout_constraintEnd_toEndOf="@+id/edtEmailRegis"
+                        app:layout_constraintStart_toStartOf="@+id/edtEmailRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/edtEmailRegis" />
+
+                    <EditText
+                        android:id="@+id/edtConfPassRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/input_border"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minHeight="42dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:scrollHorizontally="true"
+                        app:layout_constraintEnd_toEndOf="@+id/edtPassRegis"
+                        app:layout_constraintStart_toStartOf="@+id/edtPassRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/edtPassRegis" />
+
+                    <EditText
+                        android:id="@+id/edtPhoneRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/input_border"
+                        android:hint="Phone Number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:minHeight="42dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:scrollHorizontally="true"
+                        app:layout_constraintEnd_toEndOf="@+id/edtConfPassRegis"
+                        app:layout_constraintStart_toStartOf="@+id/edtConfPassRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/edtConfPassRegis" />
+
+                    <EditText
+                        android:id="@+id/edtDateOfBirthRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/input_border"
+                        android:hint="Date Of Birth"
+                        android:inputType="date"
+                        android:minHeight="42dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        app:layout_constraintEnd_toEndOf="@+id/edtPhoneRegis"
+                        app:layout_constraintStart_toStartOf="@+id/edtPhoneRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/edtPhoneRegis" />
+
+                    <EditText
+                        android:id="@+id/edtAddressRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/input_border"
+                        android:hint="Address"
+                        android:inputType="text"
+                        android:minHeight="42dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        app:layout_constraintEnd_toEndOf="@+id/edtDateOfBirthRegis"
+                        app:layout_constraintStart_toStartOf="@+id/edtDateOfBirthRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/edtDateOfBirthRegis" />
+
+                    <Button
+                        android:id="@+id/btnRegis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Sign Up"
+                        android:textAllCaps="false"
+                        app:backgroundTint="@color/primary"
+                        app:layout_constraintEnd_toEndOf="@+id/edtAddressRegis"
+                        app:layout_constraintStart_toStartOf="@+id/edtAddressRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/edtAddressRegis" />
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Sign In"
+                        android:textAllCaps="false"
+                        android:textColor="@color/primary"
+                        app:backgroundTint="@color/primary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/btnRegis"
+                        app:layout_constraintStart_toStartOf="@+id/btnRegis"
+                        app:layout_constraintTop_toBottomOf="@+id/btnRegis" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

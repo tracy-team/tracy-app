@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.laporan.JenisLaporanActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/foto" />
+
+            <TextView
+                android:id="@+id/tvUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Hey, User"
+                android:textColor="@color/txt"
+                android:textFontWeight="800"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvTanggal"
+                app:layout_constraintEnd_toStartOf="@+id/ivProfile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivProfile" />
+
+            <TextView
+                android:id="@+id/tvTanggal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Kamis, 26 Januari 2023"
+                app:layout_constraintEnd_toEndOf="@+id/tvUser"
+                app:layout_constraintStart_toStartOf="@+id/tvUser"
+                app:layout_constraintTop_toBottomOf="@+id/tvUser" />
+
+            <Button
+                android:id="@+id/btnPencurian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:padding="24dp"
+                android:text="Pencurian"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/btnPerampokan"
+                app:layout_constraintStart_toStartOf="@+id/tvTanggal"
+                app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+            <Button
+                android:id="@+id/btnPerampokan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:padding="24dp"
+                android:text="Perampokan"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/ivProfile"
+                app:layout_constraintStart_toEndOf="@+id/btnPencurian"
+                app:layout_constraintTop_toTopOf="@+id/btnPencurian" />
+
+            <Button
+                android:id="@+id/btnPenculikan"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="32dp"
+                android:padding="24dp"
+                android:text="Penculikan"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/btnPencurian"
+                app:layout_constraintStart_toStartOf="@+id/btnPencurian"
+                app:layout_constraintTop_toBottomOf="@+id/btnPencurian" />
+
+            <Button
+                android:id="@+id/btnNarkoba"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:padding="24dp"
+                android:text="Narkoba"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/btnPerampokan"
+                app:layout_constraintStart_toStartOf="@+id/btnPerampokan"
+                app:layout_constraintTop_toBottomOf="@+id/btnPerampokan" />
+
+            <Button
+                android:id="@+id/btnLainnya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:padding="16dp"
+                android:text="Laporan lainnya..."
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/btnNarkoba"
+                app:layout_constraintStart_toStartOf="@+id/btnPenculikan"
+                app:layout_constraintTop_toBottomOf="@+id/btnPenculikan" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Riwayat"
+                android:textColor="@color/txt"
+                android:textFontWeight="800"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLainnya" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

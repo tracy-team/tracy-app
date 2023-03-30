@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "39256026267",
+    "project_id": "tracy-e6834",
+    "storage_bucket": "tracy-e6834.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39256026267:android:0fbfc9c1b567283468ea3e",
+        "android_client_info": {
+          "package_name": "com.alcorp.tracy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39256026267-j52ppdfluahcjg0o91e3tp71oit4om6a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alcorp.tracy",
+            "certificate_hash": "98ca71636579565aef1bab45decc71ffbb4d0abf"
+          }
+        },
+        {
+          "client_id": "39256026267-5orie2qbljc9976j3r8c282fhpbmuhal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjB8PSJQpdd59JMETkiIrGWBrsVTIlHfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39256026267-5orie2qbljc9976j3r8c282fhpbmuhal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
